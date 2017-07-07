@@ -1,0 +1,29 @@
+[user]
+	name = qgp9
+	email = pauljang9@gmail.com
+[alias]
+	st = status
+	ci = commit
+	ca = commit -a -m
+	co = checkout
+	br = branch
+	lo = log --graph --pretty=oneline
+	k = log --graph --decorate --pretty=oneline --abbrev-commit
+[core]
+	excludesfile = ~/.gitignore_global
+	quotepath = false
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[push]
+	default = matching
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true

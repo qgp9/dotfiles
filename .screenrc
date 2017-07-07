@@ -1,0 +1,9 @@
+defscrollback 10000 
+autodetach on
+vbell on
+
+hardstatus alwayslastline 
+hardstatus string '%{= kg}[ %{y}%H %{g}][%= %{=kw}%?%-w%?%{y}(%{W}%n*%t%?(%u)%?%{y})%{g}%?%+w%?%?%= %{g}][ %{y}%Y-%m-%d %{W}%c %D %{g}]'
+ 
+escape ^Gg
+#shell bash
