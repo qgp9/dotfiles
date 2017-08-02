@@ -50,7 +50,7 @@ set smartindent                 " smart autoindenting when starting a new line
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab                   " set et
+set expandtab                  " set et
 set cinoptions+=g0,h2
 
 set encoding=utf-8
@@ -160,7 +160,19 @@ call plug#begin('~/.vim/plugged')
 "
 " " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'lervag/vimtex'
+Plug 'sickill/vim-monokai'
+Plug 'pangloss/vim-javascript'
+Plug 'tomasr/molokai'
+Plug 'posva/vim-vue'
+Plug 'digitaltoad/vim-pug'
 call plug#end()
+
+"" Javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_flow = 1
+" set foldmethod=syntax
+" set conceallevel=1
+
 
 "-------------------------------------------------------------------------------
 " VUNDLE 
