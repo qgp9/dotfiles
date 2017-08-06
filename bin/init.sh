@@ -2,6 +2,8 @@
 
 DOTFILES="$HOME/dotfiles"
 
+export lC_ALL=en_US.UTF-8
+
 cd $HOME
 
 if perl -nle'exit(!/^Debian|Ubuntu/i)' /etc/issue
