@@ -8,7 +8,7 @@ cd $HOME
 
 if perl -nle'exit(!/^Debian|Ubuntu/i)' /etc/issue
 then
-  sudo apt-get install git tmux
+  sudo apt-get --assume-yes install git tmux
 fi
 
 if [ ! -d $DOTFILES ]
