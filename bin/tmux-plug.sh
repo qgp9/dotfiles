@@ -1,0 +1,1 @@
+/Users/beomsu/.config/tmux/tmux-plug.sh
