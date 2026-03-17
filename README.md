@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Written with GitHub Copilot](https://img.shields.io/badge/Written%20with-GitHub%20Copilot-blue?logo=githubcopilot&logoColor=white)](https://github.com/features/copilot)
+
 Personal dotfiles managed with [yadm](https://yadm.io).
 
 ## Installation
