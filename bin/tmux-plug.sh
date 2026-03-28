@@ -1,1 +1,2 @@
-/Users/beomsu/.config/tmux/tmux-plug.sh
+#!/bin/sh
+exec ~/.config/tmux/tmux-plug.sh "$@"
