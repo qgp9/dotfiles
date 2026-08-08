@@ -1,0 +1,4 @@
+ignored_config_paths = [
+  "{{ env.HOME }}/wrkp/home/.local/share",
+]
+ceiling_paths = ["{{ env.HOME }}/wrkp/home"]

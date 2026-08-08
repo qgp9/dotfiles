@@ -1,0 +1,4 @@
+romkatv/powerlevel10k
+zsh-users/zsh-autosuggestions     # 똑똑한 자동완성 추천
+zsh-users/zsh-syntax-highlighting # 명령어 타이핑 시 초록/빨강 색상 강조
+Aloxaf/fzf-tab                    # 탭 키 자동완성 고도화
