@@ -23,8 +23,12 @@ BREW_PATH=$(find_first \
 . ~/bin/my-ssh-agent.sh
 
 #alias m="mise"
-alias mx="mise x --"
-alias lv='NVIM_APPNAME=lazyvim nvim ${NVIM:+--server ${NVIM} --remote-tab}'
-alias lvi='NVIM_APPNAME=lazyvim nvim ${NVIM:+--server ${NVIM} --remote-tab}'
+alias vi="vim"
+is_command nvim && alias vim="nvim"
+if [ -d ~/.config/lazyvim ]; then
+    alias lv='NVIM_APPNAME=lazyvim nvim ${NVIM:+--server ${NVIM} --remote-tab}'
+    alias lvi='NVIM_APPNAME=lazyvim nvim ${NVIM:+--server ${NVIM} --remote-tab}'
+fi
+is_command mise && alias mx="mise x --"
 
 export PATH=~/bin:${PATH}
