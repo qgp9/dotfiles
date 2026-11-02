@@ -1,0 +1,10 @@
+onboarding = false
+
+[keys]
+# prefix 기본값은 ctrl+b. tmux처럼 ctrl+a 사용
+prefix = "ctrl+a"
+# screen 스타일: prefix+a 로 마지막 pane(탭) 이동. (literal ctrl+a 는 prefix 두 번 = herdr 내장)
+last_pane = "prefix+a"
+# ⌥F1/⌥F2 로 이전/다음 tab (기본 prefix+p/n 도 유지)
+previous_tab = ["prefix+p"]
+next_tab = ["prefix+n"]
