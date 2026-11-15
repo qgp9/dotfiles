@@ -1,0 +1,6 @@
+# Linux에서만 로드됨.
+gtk-single-instance = true
+# 타이틀바 없애고 WM(i3/Hyprland 등)에 맡기려면:
+# window-decoration = false
+# HiDPI에서 freetype 힌팅 조정이 필요하면:
+# freetype-load-flags = no-hinting

@@ -1,0 +1,23 @@
+# Mac에서만 로드됨. tmux/vim에서 Meta(Alt) 키 쓰려면 필수.
+macos-option-as-alt = true
+# iTerm2의 native fullscreen 느낌
+macos-non-native-fullscreen = false
+font-thicken = true
+# Retina에서 13pt가 살짝 작으면:
+# font-size = 14
+copy-on-select = clipboard
+
+# ── Quick Terminal (드롭다운 터미널) ───────────────
+# global: 접두사 = Ghostty가 포커스 없어도 동작 (손쉬운 사용 권한 필요)
+keybind = global:cmd+semicolon=toggle_quick_terminal
+# 위치: top | bottom | left | right | center
+quick-terminal-position = top
+# 다른 앱 클릭하면 자동으로 숨김
+quick-terminal-autohide = true
+
+# ⌘F1~⌘F4 를 kitty 모드와 상관없이 항상 ESC[1;9P/Q/R/S (super+F1~F4) 로 고정해서 보냄.
+# herdr가 kitty 모드에서 받은 super를 alt로 읽어서, iTerm2(Key Binding)와 같은 바이트로 통일.
+keybind = super+f1=csi:1;9P
+keybind = super+f2=csi:1;9Q
+keybind = super+f3=csi:1;9R
+keybind = super+f4=csi:1;9S

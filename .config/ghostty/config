@@ -1,0 +1,39 @@
+# ── Font ──────────────────────────────────────────
+# JetBrains Mono는 Ghostty에 내장되어 있어 별도 설치 불필요.
+# Nerd Font 글리프(아이콘)도 빌트인이라 따로 패치폰트 안 깔아도 됨.
+font-family = JetBrains Mono
+font-size = 13
+# 리거처 싫으면 주석 해제 (calt = 프로그래밍 리거처)
+# font-feature = -calt, -liga, -dlig
+
+# ── Theme ─────────────────────────────────────────
+# `ghostty +list-themes` 로 전체 목록 확인 가능
+# 시스템 라이트/다크 연동:
+#theme = "light:Catppuccin Latte,dark:Catppuccin Mocha"
+#theme = "light:Catppuccin Latte,dark:Catppuccin Mocha"
+theme = "iTerm2 Solarized Light"
+
+# ── Window ────────────────────────────────────────
+#background-opacity = 0.95
+background-opacity = 1
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+# 마지막 surface 닫을 때 확인창 끔 (tmux로 세션 관리하니 불필요)
+confirm-close-surface = false
+
+# ── Cursor / Mouse ────────────────────────────────
+cursor-style = block
+cursor-style-blink = false
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+# ── Shell integration ─────────────────────────────
+# tmux 안에서도 동작. cursor 기능은 tmux와 가끔 충돌하니 제외.
+shell-integration = detect
+shell-integration-features = no-cursor,sudo,title,ssh-terminfo,ssh-env
+
+# ── OS-specific overrides (없으면 무시됨) ──────────
+config-file = ?config.macos
+config-file = ?config.linux
+#config-file = ?auto/theme.ghostty
